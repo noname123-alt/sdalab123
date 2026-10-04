@@ -1,0 +1,820 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f5f0;
+    color: #30251f;
+}
+
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3b2115, #8b4f2c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.login-wrapper {
+    width: 900px;
+    min-height: 550px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+
+/* LEFT SIDE */
+
+.login-left {
+    width: 48%;
+    background: linear-gradient(150deg, #5c301c, #9b5a32);
+    color: white;
+    padding: 60px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.login-left h1 {
+    font-size: 38px;
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+.login-left > p {
+    color: #f5dfcc;
+    line-height: 1.6;
+}
+
+.login-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.login-info span {
+    background: rgba(255,255,255,0.12);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+
+/* LOGIN FORM */
+
+.login-box {
+    width: 52%;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-box h2 {
+    font-size: 30px;
+    color: #4b2919;
+}
+
+.login-subtitle {
+    color: #888;
+    margin: 8px 0 30px;
+}
+
+.login-box label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 7px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #9b5a32;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 25px;
+    font-size: 13px;
+}
+
+.remember label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember a {
+    color: #8b4f2c;
+    text-decoration: none;
+}
+
+.main-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #8b4f2c;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: #5c301c;
+}
+
+.login-footer {
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #eadfd5;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand > span {
+    background: #8b4f2c;
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 23px;
+}
+
+.brand h2 {
+    color: #4b2919;
+    font-size: 20px;
+}
+
+.brand small {
+    color: #999;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #59483d;
+    padding: 10px 17px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #8b4f2c;
+    color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto 35px;
+    background: linear-gradient(110deg, #fff8f0, #f2dfce);
+    border-radius: 20px;
+    padding: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome {
+    color: #a26038;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.05;
+    margin: 12px 0;
+    color: #3f2518;
+}
+
+.hero h1 span {
+    color: #a26038;
+}
+
+.hero p {
+    color: #76675e;
+    max-width: 550px;
+    line-height: 1.7;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 25px;
+    background: #8b4f2c;
+    color: white;
+    padding: 13px 22px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.hero-box {
+    width: 280px;
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(80,40,20,0.1);
+}
+
+.big-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero-box h3 {
+    color: #999;
+    font-size: 13px;
+}
+
+.hero-box h2 {
+    color: #4b2919;
+    margin: 8px 0;
+}
+
+.hero-box p {
+    margin-bottom: 10px;
+}
+
+.hero-box strong {
+    font-size: 25px;
+    color: #a26038;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.feature {
+    background: white;
+    border: 1px solid #eee1d7;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.feature > span {
+    font-size: 30px;
+    background: #fff1e5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    color: #4b2919;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    font-size: 13px;
+    color: #999;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu-section {
+    max-width: 1200px;
+    width: 90%;
+    margin: 70px auto;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading > span,
+.page-title > span {
+    color: #a26038;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.section-heading h2 {
+    font-size: 35px;
+    margin: 8px 0;
+    color: #3f2518;
+}
+
+.section-heading p {
+    color: #999;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.food-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #eee2d8;
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(80,40,20,0.1);
+}
+
+.food-icon {
+    width: 75px;
+    height: 75px;
+    background: #fff1e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.tag {
+    font-size: 10px;
+    color: #a26038;
+    background: #fff1e5;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.food-card h3 {
+    margin: 15px 0 8px;
+    color: #3f2518;
+}
+
+.food-card p {
+    color: #888;
+    line-height: 1.5;
+    font-size: 14px;
+    min-height: 42px;
+}
+
+.food-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.food-bottom strong {
+    color: #8b4f2c;
+    font-size: 20px;
+}
+
+.food-bottom a {
+    background: #8b4f2c;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.page-title {
+    text-align: center;
+    padding: 60px 20px 35px;
+}
+
+.page-title h1 {
+    font-size: 42px;
+    color: #3f2518;
+    margin: 8px 0;
+}
+
+.page-title p {
+    color: #888;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto 55px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.gallery-card {
+    background: white;
+    border: 1px solid #eadfd5;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    min-height: 190px;
+    transition: 0.3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(80,40,20,0.08);
+}
+
+.gallery-card.large {
+    grid-column: span 2;
+    background: linear-gradient(110deg, #fff1e5, white);
+}
+
+.gallery-icon {
+    min-width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background: #fff0e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.gallery-content span {
+    color: #a26038;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.gallery-content h2 {
+    color: #3f2518;
+    margin: 8px 0;
+}
+
+.gallery-content p {
+    color: #888;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 70px;
+    background: #5c301c;
+    border-radius: 15px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    color: white;
+}
+
+.stats h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.stats p {
+    color: #e8cdbb;
+}
+
+
+/* =========================
+   BILLING
+========================= */
+
+.billing-layout {
+    width: 90%;
+    max-width: 1100px;
+    margin: 10px auto 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.billing-form,
+.bill {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #eadfd5;
+}
+
+.billing-form h2 {
+    color: #3f2518;
+    margin-bottom: 20px;
+}
+
+.billing-form label {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 15px 0 6px;
+}
+
+.billing-form input,
+.billing-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: white;
+}
+
+.billing-form .main-btn {
+    margin-top: 25px;
+}
+
+
+/* BILL */
+
+.bill {
+    background: #fffaf6;
+}
+
+.bill-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #d5c3b5;
+    padding-bottom: 20px;
+}
+
+.bill-top span {
+    font-size: 11px;
+    color: #a26038;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.bill-top h2 {
+    margin-top: 6px;
+    color: #3f2518;
+}
+
+.bill-logo {
+    width: 50px;
+    height: 50px;
+    background: #8b4f2c;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.bill-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid #eee2d8;
+}
+
+.bill-line span {
+    color: #777;
+}
+
+.bill-line strong {
+    color: #3f2518;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0;
+    margin-top: 5px;
+}
+
+.total strong {
+    font-size: 24px;
+    color: #8b4f2c;
+}
+
+.payment-status {
+    text-align: center;
+    padding: 12px;
+    background: #e9f6ed;
+    color: #28733e;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.thank-you {
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.billing-note {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    background: #fff1e5;
+    padding: 20px 25px;
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.billing-note > div:first-child {
+    font-size: 30px;
+}
+
+.billing-note h3 {
+    color: #4b2919;
+    margin-bottom: 5px;
+}
+
+.billing-note p {
+    color: #806f63;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #3b2115;
+    color: white;
+    padding: 35px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2 {
+    margin-bottom: 7px;
+}
+
+footer p {
+    color: #d5bca9;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .login-wrapper {
+        flex-direction: column;
+    }
+
+    .login-left,
+    .login-box {
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .features,
+    .food-grid,
+    .billing-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-card.large {
+        grid-column: span 1;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}

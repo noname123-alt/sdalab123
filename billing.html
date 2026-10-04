@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing - Canteen Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="navbar">
+
+        <div class="brand">
+            <span>🍴</span>
+            <div>
+                <h2>Canteen Hub</h2>
+                <small>University Canteen</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="billing.html" class="active">Billing</a>
+            <a href="login.html">Logout</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-title">
+
+        <span>BILLING SYSTEM</span>
+
+        <h1>Generate Your Bill</h1>
+
+        <p>
+            Enter customer details and select your food item.
+        </p>
+
+    </section>
+
+
+    <section class="billing-layout">
+
+
+        <div class="billing-form">
+
+            <h2>Customer Information</h2>
+
+            <form>
+
+                <label>Customer Name</label>
+
+                <input type="text"
+                       placeholder="Enter customer name"
+                       required>
+
+
+                <label>Student ID</label>
+
+                <input type="text"
+                       placeholder="Enter student ID">
+
+
+                <label>Select Food Item</label>
+
+                <select>
+
+                    <option>Chicken Burger - Rs. 350</option>
+
+                    <option>Chicken Pizza - Rs. 500</option>
+
+                    <option>French Fries - Rs. 200</option>
+
+                    <option>Club Sandwich - Rs. 250</option>
+
+                    <option>Chicken Shawarma - Rs. 300</option>
+
+                    <option>Chicken Pasta - Rs. 400</option>
+
+                </select>
+
+
+                <label>Quantity</label>
+
+                <input type="number"
+                       value="1"
+                       min="1">
+
+
+                <label>Payment Method</label>
+
+                <select>
+
+                    <option>Cash</option>
+
+                    <option>Card</option>
+
+                    <option>EasyPaisa</option>
+
+                    <option>JazzCash</option>
+
+                </select>
+
+
+                <button type="submit" class="main-btn">
+                    Generate Bill
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="bill">
+
+            <div class="bill-top">
+
+                <div>
+                    <span>ORDER SUMMARY</span>
+                    <h2>Customer Bill</h2>
+                </div>
+
+                <div class="bill-logo">
+                    🍴
+                </div>
+
+            </div>
+
+
+            <div class="bill-line">
+                <span>Chicken Burger</span>
+                <strong>Rs. 350</strong>
+            </div>
+
+
+            <div class="bill-line">
+                <span>Quantity</span>
+                <strong>1</strong>
+            </div>
+
+
+            <div class="bill-line">
+                <span>Service Charges</span>
+                <strong>Rs. 0</strong>
+            </div>
+
+
+            <div class="total">
+
+                <span>Total Amount</span>
+
+                <strong>Rs. 350</strong>
+
+            </div>
+
+
+            <div class="payment-status">
+                ✓ Ready for Payment
+            </div>
+
+
+            <p class="thank-you">
+                Thank you for visiting Canteen Hub!
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="billing-note">
+
+        <div>💳</div>
+
+        <div>
+            <h3>Easy & Secure Payment</h3>
+            <p>
+                We accept Cash, Cards, EasyPaisa and JazzCash.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div>
+        <h2>🍴 Canteen Hub</h2>
+        <p>Fast service • Affordable prices • Fresh food</p>
+    </div>
+
+    <div>
+        <p>© 2026 Canteen Management System</p>
+    </div>
+
+</footer>
+
+</body>
+</html>
